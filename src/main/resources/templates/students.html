@@ -31,7 +31,8 @@
 					<td th:text = "${student.lastName}"></td>
 					<td th:text = "${student.email}"></td>
 					<td>
-						<a th:href = "@{/students/edit/id}"></a>
+						<a th:href = "@{/students/edit/{id}(id=$student.id})}">Update</a>
+					</td>
 				</tr>
 			</tbody>
 			
