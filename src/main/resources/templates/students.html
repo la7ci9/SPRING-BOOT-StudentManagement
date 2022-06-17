@@ -12,7 +12,7 @@
 		</div>
 		
 		<div>
-			<a th:ref = "@{students/new}">Add Student</a>
+			<a th:href = "@{students/new}">Add Student</a>
 		</div>
 		
 		<table>
@@ -30,6 +30,8 @@
 					<td th:text = "${student.firstName}"></td>
 					<td th:text = "${student.lastName}"></td>
 					<td th:text = "${student.email}"></td>
+					<td>
+						<a th:href = "@{/students/edit/id}"></a>
 				</tr>
 			</tbody>
 			
