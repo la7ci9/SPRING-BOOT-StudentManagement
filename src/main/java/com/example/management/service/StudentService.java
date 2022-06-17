@@ -27,6 +27,15 @@ public class StudentService implements StudentServiceDAO{
 	public Student saveStudent(Student student) {
 		return studentRepository.save(student);
 	}
-	
-	
+
+	@Override
+	public Student getStudentById(Long id) {
+		return studentRepository.findById(id).get();
+	}
+
+	@Override
+	public Student updateStudent(Student student) {
+		return studentRepository.save(student);
+	}
+
 }
