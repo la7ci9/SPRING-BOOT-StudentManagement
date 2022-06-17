@@ -38,4 +38,11 @@ public class StudentService implements StudentServiceDAO{
 		return studentRepository.save(student);
 	}
 
+
+	@Override
+	public void deleteStudentById(Long id) {
+		studentRepository.deleteById(id);
+		
+	}
+
 }
